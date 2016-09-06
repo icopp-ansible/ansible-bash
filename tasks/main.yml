@@ -1,0 +1,6 @@
+---
+- name: Install Bash via Homebrew
+  package:
+    name: ansible
+    state: latest
+  when: ansible_os_family == "Darwin"
